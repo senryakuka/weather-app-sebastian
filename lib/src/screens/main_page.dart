@@ -48,7 +48,7 @@ class _MainPageWidgetState extends State<MainPageWidget> {
     if (kDebugMode) {
       print("start");
     }
-
+    listHourlyData = await _listHourlyData.getHourlyWeatherData();
     curr = await _currentData.getCurrentWeatherData();
     Response data = await service.getWeatherData();
     String all = data.data['timezone'];
