@@ -89,10 +89,10 @@ class _CurrentCardWidgetState extends State<CurrentCardWidget> {
                                     fit: BoxFit.contain)),
                             widget.curr != null
                                 ? Text(
-                                    '   ${widget.curr?.windSpeed.toString()}%\n   Wind',
+                                    '   ${widget.curr?.windSpeed.toString()} m/sec\n        Wind',
                                     style: TextStyle(fontSize: 10))
                                 : Text(
-                                    '   ${widget.daily?.windSpeed.toString()}%\n   Wind',
+                                    '   ${widget.daily?.windSpeed.toString()} m/sec\n       Wind',
                                     style: TextStyle(fontSize: 10)),
                           ],
                         ),
